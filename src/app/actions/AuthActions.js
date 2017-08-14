@@ -20,6 +20,7 @@ export function setCurrentUser(user){
 
 export function login(data){
     return dispatch => {
-        return axios.post("http://localhost:5000/api/auth/", data);
+        console.log("APIBASEURL:" + APIBASEURL);
+        return axios.post(APIBASEURL + "/auth/", data);
     }
 }

@@ -61,6 +61,9 @@ var config = {
                 template:'src/index.html',
                 favicon: 'src/app/images/favicon.ico'
             }),
+             new webpack.DefinePlugin({
+                'APIBASEURL': JSON.stringify(process.env.APIBASEURL || 'http://localhost:5000/api') 
+            }),
             new CleanWebpackPlugin(['dist'])
     ]
 };
