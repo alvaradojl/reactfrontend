@@ -116,14 +116,17 @@ toggleMenu(){
 
         const guestLinks = (
           <div>
-            <Button color="contrast" className={classes.button}  href="/signup" >
-                Sign up    
-            </Button>
+            <Link style={{textDecoration:"none"}} to="/signup">
+                <Button color="contrast" className={classes.button}  >
+                    Sign up    
+                </Button>
+            </Link>
 
-            <Button  color="contrast" className={classes.button}  href="/login">
-                Login 
-            </Button>
-                  
+            <Link style={{textDecoration:"none"}} to="/login">
+                <Button  color="contrast" className={classes.button}  >
+                    Login 
+                </Button>
+            </Link>
          </div>
         );
 
