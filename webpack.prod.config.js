@@ -62,7 +62,7 @@ var config = {
                 favicon: 'src/app/images/favicon.ico'
             }),
              new webpack.DefinePlugin({
-                'process.env.APIBASEURL': JSON.stringify(process.env.APIBASEURL || 'https://dotnetcorebackendapi.azurewebsites.net/api') 
+                'APIBASEURL': JSON.stringify(process.env.APIBASEURL || 'https://dotnetcorebackendapi.azurewebsites.net/api') 
             }),
             new CleanWebpackPlugin(['dist'])
     ]
