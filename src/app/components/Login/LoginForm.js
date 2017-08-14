@@ -7,7 +7,7 @@ import jwtDecode from "jwt-decode";
 import setAuthorizationToken from "./../../utils/setAuthorizationToken";
 import Validator from "validator"; 
 import isEmpty from "lodash/isEmpty";
-import { Field, reduxForm } from 'redux-form'
+import { Field, reduxForm } from 'redux-form';
 import Typography from 'material-ui/Typography';
 import Grid from 'material-ui/Grid'; 
 import { withStyles } from 'material-ui/styles';
