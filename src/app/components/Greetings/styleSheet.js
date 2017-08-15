@@ -1,6 +1,6 @@
 import { createStyleSheet } from 'material-ui/styles';
 
-export default createStyleSheet(theme => ({
+export const styleSheet = theme => ({
     root: {
       display: 'flex',
       flexWrap: 'wrap',
@@ -15,4 +15,4 @@ export default createStyleSheet(theme => ({
     subheader: {
       width: '100%',
     },
-}));
+});

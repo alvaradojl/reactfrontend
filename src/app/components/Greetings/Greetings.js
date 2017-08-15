@@ -2,7 +2,7 @@ import React from "react";
  import Button from "material-ui/Button";
  import { CircularProgress } from 'material-ui/Progress';
  import PropTypes from 'prop-types';
- import { withStyles, createStyleSheet } from 'material-ui/styles';
+ import { withStyles } from 'material-ui/styles';
  import { LinearProgress } from 'material-ui/Progress';
 import List, {
   ListItem,
@@ -19,11 +19,11 @@ import { GridList, GridListTile } from 'material-ui/GridList';
 import {tileData} from './tileData';
 
 
-const styleSheet = createStyleSheet(theme => ({
+const styleSheet = theme => ({
   progress: {
     margin: `0 ${theme.spacing.unit * 2}px`,
   },
-}));
+});
 
 export class Greetings extends React.Component{
 

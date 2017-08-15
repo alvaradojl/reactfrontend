@@ -9,7 +9,7 @@ import Paper from 'material-ui/Paper';
 import { MenuItem } from 'material-ui/Menu';
 import match from 'autosuggest-highlight/match';
 import parse from 'autosuggest-highlight/parse';
-import { withStyles, createStyleSheet } from 'material-ui/styles';
+import { withStyles } from 'material-ui/styles';
 
 const suggestions = [
   { label: 'Afghanistan' },
@@ -121,7 +121,7 @@ function getSuggestions(value) {
       });
 }
 
-const styleSheet = createStyleSheet(theme => ({
+const styleSheet = theme => ({
   container: {
     flexGrow: 1,
     position: 'relative',
@@ -135,17 +135,17 @@ const styleSheet = createStyleSheet(theme => ({
     marginBottom: theme.spacing.unit * 4
   },
   suggestion: {
-    display: 'block',
+    display: 'block'
   },
   suggestionsList: {
     margin: 0,
     padding: 0,
-    listStyleType: 'none',
+    listStyleType: 'none'
   },
   textField: {
-    width: '100%',
-  },
-}));
+    width: '100%'
+  }
+});
 
 class IntegrationAutosuggest extends Component {
   state = {

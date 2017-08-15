@@ -5,7 +5,7 @@ import { LinearProgress } from 'material-ui/Progress';
  import PropTypes from "prop-types";
 
  
-const styleSheet = createStyleSheet(theme => ({
+ const styleSheet = theme => ({
   root:{ 
     height:"5px",
     width:"100%",
@@ -17,7 +17,7 @@ const styleSheet = createStyleSheet(theme => ({
     padding:"0px",
     height:"3px"
   }
-}));
+});
 
 class TopProgress extends React.Component{
 

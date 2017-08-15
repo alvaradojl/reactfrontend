@@ -1,9 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-
-import { createStyleSheet } from 'material-ui/styles';
 import { withStyles } from 'material-ui/styles';
-
 import Drawer from 'material-ui/Drawer'; 
 import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
@@ -30,7 +27,7 @@ import AccountCircleIcon from "material-ui-icons/AccountCircle";
 import FeedbackIcon from "material-ui-icons/Feedback";
 import HelpIcon from "material-ui-icons/Help";
 
-const styleSheet = createStyleSheet({
+const styleSheet = theme => ({
  list: {
     width: 250,
     flex: 'initial',

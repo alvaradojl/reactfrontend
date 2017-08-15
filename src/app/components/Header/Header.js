@@ -29,7 +29,7 @@ import orange from "material-ui/colors/orange";
 import SideMenu from "./../SideMenu/SideMenu";
 import Drawer from 'material-ui/Drawer'; 
 
-const styleSheet = createStyleSheet({
+const styleSheet = theme => ({
     root: {
         marginTop: "80px", 
     },

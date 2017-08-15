@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { withStyles, createStyleSheet } from 'material-ui/styles';
+import { withStyles } from 'material-ui/styles';
 import BottomNavigation, { BottomNavigationButton } from 'material-ui/BottomNavigation';
 import ExploreIcon from 'material-ui-icons/Explore';
 import FavoriteIcon from 'material-ui-icons/Favorite';
@@ -10,7 +10,7 @@ import HomeIcon from 'material-ui-icons/Home';
 import Typography from 'material-ui/Typography';
 
 
-const styleSheet = createStyleSheet(theme => ({
+const styleSheet = theme => ({
   root: {
     flexGrow: 1,
     marginTop: 30,
@@ -20,7 +20,7 @@ const styleSheet = createStyleSheet(theme => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
-}));
+});
 
 export class Footer extends React.Component{
  state = {

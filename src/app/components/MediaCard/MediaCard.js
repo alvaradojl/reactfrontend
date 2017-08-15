@@ -9,31 +9,31 @@ import SkipPreviousIcon from 'material-ui-icons/SkipPrevious';
 import PlayArrowIcon from 'material-ui-icons/PlayArrow';
 import SkipNextIcon from 'material-ui-icons/SkipNext';
 
-const styleSheet = createStyleSheet({
+const styleSheet = theme => ({
   card: {
-    display: 'flex',
+    display: 'flex'
   },
   details: {
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'column'
   },
   content: {
-    flex: '1 0 auto',
+    flex: '1 0 auto'
   },
   cover: {
     width: 151,
-    height: 151,
+    height: 151
   },
   controls: {
     display: 'flex',
     alignItems: 'center',
     paddingLeft: 8,
-    paddingBottom: 8,
+    paddingBottom: 8
   },
   playIcon: {
     height: 38,
-    width: 38,
-  },
+    width: 38
+  }
 });
 
 export class MediaCard extends React.Component {
