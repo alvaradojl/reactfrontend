@@ -1,6 +1,6 @@
 import React from "react";
 import TextField from 'material-ui/TextField';
-import IntegrationAutosuggest from "./../TimezoneSuggestion/TimezoneSuggestion";
+import IntegrationAutosuggest from "./../Autosuggest/IntegrationAutosuggest";
 import Typography from 'material-ui/Typography';
 import {themePalette} from "./../../styles/MaterialUi/themePalette";
 
@@ -48,8 +48,6 @@ export const RenderAutosuggestion = ({
                 {...custom}
                 label={label}  
                 margin="normal"     
-                helperText={error && touched && error} 
-                error={error && touched}
                 fullWidth />
 
                 {touched &&   
