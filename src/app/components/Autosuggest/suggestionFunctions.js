@@ -78,4 +78,3 @@ export function getSuggestions(value) {
           return keep;
         });
   }
-  

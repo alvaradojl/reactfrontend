@@ -3,7 +3,7 @@ import { Link, NavLink, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { logout } from "./../../actions/AuthActions"; 
-import { withStyles, createStyleSheet } from 'material-ui/styles';
+import { withStyles } from 'material-ui/styles';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
@@ -20,37 +20,13 @@ import SyncProblemIcon from "material-ui-icons/SyncProblem";
 import CallMadeIcon from "material-ui-icons/CallMade";
 import CallReceivedIcon from "material-ui-icons/CallReceived";
 import {themePalette} from "./../../styles/MaterialUi/themePalette";
-import pink from 'material-ui/colors/pink';
 import deepOrange from "material-ui/colors/deepOrange";
 import AssignmentIcon from 'material-ui-icons/Assignment';
 import Avatar from 'material-ui/Avatar';
-import amber from "material-ui/colors/amber";
-import orange from "material-ui/colors/orange"; 
 import SideMenu from "./../SideMenu/SideMenu";
 import Drawer from 'material-ui/Drawer'; 
+import {styleSheet} from './styleSheet';
 
-const styleSheet = theme => ({
-    root: {
-        marginTop: "80px", 
-    },
-    appBar:{
-        backgroundColor: "#fff", 
-    },
-    flex: {
-        flex: 1,
-    },
-    badge: {
-        margin: "8px",
-  },
-    icon:{
-        fill: orange[500],
-    },
-    colorAvatar: {
-    margin: 10,
-    color: '#fff',
-    backgroundColor: orange[500],
-  }
-});
 
 class Header extends React.Component {
 
@@ -95,6 +71,10 @@ toggleMenu(){
               <div>
             <Button color="contrast" className={classes.button}  href="/events" >
                 Events   
+            </Button>
+
+            <Button color="contrast" className={classes.button}  href="/web3" >
+                Web3   
             </Button>
 
                <Button color="contrast" className={classes.button}  href="/greetings" >

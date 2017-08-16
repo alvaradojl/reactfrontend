@@ -15,6 +15,7 @@ import Authenticate from "./../utils/Authenticate";
 import Footer from "./../components/Footer/Footer";
 import InfinitePage from "./../components/Infinite/InfinitePage";
 import TopProgress from "./../components/TopProgress/TopProgress";
+import Web3Page from './../components/Web3/Web3Page';
 
 const newHistory = createBrowserHistory();
 
@@ -38,6 +39,8 @@ export class App extends React.Component {
                     <Route exact path="/infinite" component={InfinitePage}/>
                     <Route exact path="/signup" component={SignupPage}/> 
                     <Route exact path="/login" component={LoginPage}/> 
+                    <Route exact path="/web3" component={Web3Page}/> 
+                    
                 </div>
                  <Footer/>
             </div>

@@ -173,9 +173,6 @@ class SignupForm extends React.Component{
                 </Grid> 
             </div>
 
-
-
-            
         );
     }
 }
@@ -203,4 +200,3 @@ export default reduxForm({
     validate:validateErrorsOnSignupForm,
     warn:validateWarningsOnSignupForm
 })(SignupForm);
-
